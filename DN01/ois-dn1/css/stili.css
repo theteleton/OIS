@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+meni {
+  margin: 10px;
+}
+
+.info-element {
+  text-align: right;
+  padding-right:15px;
+  font-style: italic;
+}
+
+table {
+  border-spacing: 0 10px;
+}
+
+button {
+  background: white;
+}
+
+.restavracije {
+  background: url(../slike/restaurant_logo_mini.png) no-repeat scroll;
+  background-position: 4px 2px;
+  height: 31px;
+  padding: 7px;
+  padding-left: 35px;
+  vertical-align: top
+}
+
+.fakultete {
+  display: inline-flex;
+  align-items:center;
+}
+
+telo {
+  flex: 1;
+  float: right;
+  margin: 10px;
+  overflow: visible;
+  padding: 10px;
+  display: inline-block;;
+  background-color: lightgray;
+}
+
+.rob {
+  border: 1px solid transparent;
+  border-color: #C30C21;
+  border-radius: 4px;
+}
+
+.senca {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

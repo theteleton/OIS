@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+
+  <!-- leaflet knjižnica -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  
+  <script type="text/javascript" src="skripte/skripta.js"></script>
+    <script type="text/javascript" src="skripte/distance-util.js"></script>
+
+  
+
+  <!-- leaflet stili -->
+  <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
+  
+  <link rel="stylesheet" href="css/stili.css">
+  <!-- leaflet knjižnica za poti -->
+  <script src="skripte/leaflet-routing-machine.js"></script>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>DN1</title>
+  </head>
+
+  <body>
+    
+    <!-- MENI -->
+    <meni>
+      <table>
+        <tr>
+          <td class="info-element">Zanimivosti:</td>
+          <td>
+            <button id="dodajFakultete" class="senca rob fakultete"><img src="slike/university_logo_mini.png" style="padding-right:5px">Dodaj fakultete</button>
+            <input type="button" class="senca rob restavracije" id="dodajRestavracije" value="Dodaj restavracije">
+          </td>
+        </tr>
+        <tr>
+          <td class="info-element">Najdeni rezultati:</td>
+          <td><label id="fakultete_rezultati">0</label> fakultet in <label id="restavracije_rezultati">0</label> restavracij</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button id="izbrisiRezultate" class="senca rob" disabled="true">
+              Odstrani vse interesne točke</button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input id="idRadij" type="checkbox" name="radij" value="radij">
+            Prikaz radija<br></td>
+        </tr>
+        <tr>
+          <td class="info-element">Prikaži v blizini do:</td>
+          <td><input type="number" id="radij" value="0"> km</td>
+        </tr>
+        <tr style="text-align:center">
+          <td Colspan="2">
+            <input id="idDoFri" type="radio" name="pot" value="doFri" checked>Pot do FRI<br>
+            <input id="idIzFri" type="radio" name="pot" value="izFri">Pot iz FRI<br>
+          </td>
+        </tr>
+      </table>
+    </meni>
+
+    <!-- TELO -->
+    <telo id="mapa_id" class="senca rob"></telo>
+    
+  </body>
+  
+</html>
