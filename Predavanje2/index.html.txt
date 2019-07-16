@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prodajalna dobrot</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Najboljša trgovina eksoti?nih stvari v Sloveniji">
+    <link rel="stylesheet" href="stil.css">
+    <style>
+      h2 {
+        color:DarkBlue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color:DarkRed">Spletna trgovina</h1>
+    <h2>Uvodni nagovor</h2>
+    <p><em>Pozdravljeni</em> v prodajalni<br/> bu?k in<br/> divjih ka?.</p>
+    <p>Prodajamo predvsem</p>
+    <ul>
+      <li>melone,</li>
+      <li>hokaido bu?e,</li>
+      <li><a href="https://en.wikipedia.org/wiki/Anaconda">anakonde</a> in</li>
+      <li>pitone.</li>
+    </ul>
+    <p>Specializirani pa smo na</p>
+    <ol>
+      <li>anakonde in</li>
+      <li>melone.</li>
+    </ol>
+    <img src="anakonda.jpg" alt="Lovljenje anakonde">
+    <p>Na voljo so <strong>dodatni popusti</strong>.</p>
+    <table>
+      <tr>
+        <th>Predmet popusta</th>
+        <th>Znesek popusta</th>
+      </tr>
+      <tr>
+        <td>ve? kot 3 anakonde</td>
+        <td rowspan="2">10% popust</td>
+      </tr>
+      <tr>
+        <td>ve? kot 30 melon</td>
+      </tr>
+      <tr>
+        <td>ve? kot 75 melon</td>
+        <td>20% popust</td>
+      </tr>
+    </table>
+    <div id="kontakt">
+      <h2>Kontaktni podatki</h2>
+      <p class="telefonska-stevilka">+386 (0)90 90 90 90</p>
+      <form action="/posredujSporocilo" method="post">
+        <p>Oseba: <input type="text" name="oseba" placeholder="Vnesite ime in priimek"></p>
+        <p>Komentar: <textarea name="komentar" rows="5" cols="20" placeholder="Vnesite komentar"></textarea></p>
+        <p>Kako zelo vas je strah ka??</p>
+        <select name="strah">
+          <option value="-1">Sploh me ni strah, pogumen sem kot Chuck Norris.</option>
+          <option value="1">Malo se mi zašibijo kolena ob pogledu na ka?o.</option>
+          <option value="2">?isto zmrznem in prestrašeno gledam ka?i neposredno v o?i.</option>
+        </select>
+        <p><input type="submit" value="Pošlji podatke"></p>
+      </form>
+    </div>
+  </body>
+</html>
